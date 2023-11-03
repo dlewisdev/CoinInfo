@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+class MockCoinService: CoinServiceProtocol {
+    func fetchCoins() async throws -> [Coin] {
+        return []
+    }
+    
+    func fetchCoinDetails(id: String) async throws -> CoinDetails? {
+        return nil
+    }
+    
+    
+}
