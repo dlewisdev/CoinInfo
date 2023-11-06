@@ -585,3 +585,69 @@ let mockCoinData_marketCapDesc: Data = """
 ]
 
 """.data(using: .utf8)!
+
+// Invalid name key in bitcoin
+let mockCoins_invalidJSON = """
+[
+  {
+    "id": "bitcoin",
+    "symbol": "btc",
+    "skhdfiusei": "Bitcoin",
+    "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
+    "current_price": 34983,
+    "market_cap": 683401171188,
+    "market_cap_rank": 1,
+    "fully_diluted_valuation": 734649328835,
+    "total_volume": 12348405156,
+    "high_24h": 35366,
+    "low_24h": 34572,
+    "price_change_24h": -124.10385511264758,
+    "price_change_percentage_24h": -0.3535,
+    "market_cap_change_24h": -1400899935.7797852,
+    "market_cap_change_percentage_24h": -0.20457,
+    "circulating_supply": 19535068,
+    "total_supply": 21000000,
+    "max_supply": 21000000,
+    "ath": 69045,
+    "ath_change_percentage": -49.33335,
+    "ath_date": "2021-11-10T14:24:11.849Z",
+    "atl": 67.81,
+    "atl_change_percentage": 51490.01657,
+    "atl_date": "2013-07-06T00:00:00.000Z",
+    "roi": null,
+    "last_updated": "2023-11-06T20:29:27.772Z"
+  },
+  {
+    "id": "ethereum",
+    "symbol": "eth",
+    "name": "Ethereum",
+    "image": "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+    "current_price": 1895.52,
+    "market_cap": 227901084629,
+    "market_cap_rank": 2,
+    "fully_diluted_valuation": 227901084629,
+    "total_volume": 12493888340,
+    "high_24h": 1913.15,
+    "low_24h": 1860.61,
+    "price_change_24h": 0.636968,
+    "price_change_percentage_24h": 0.03362,
+    "market_cap_change_24h": 324380284,
+    "market_cap_change_percentage_24h": 0.14254,
+    "circulating_supply": 120269157.955391,
+    "total_supply": 120269157.955391,
+    "max_supply": null,
+    "ath": 4878.26,
+    "ath_change_percentage": -61.15569,
+    "ath_date": "2021-11-10T14:24:19.604Z",
+    "atl": 0.432979,
+    "atl_change_percentage": 437548.74847,
+    "atl_date": "2015-10-20T00:00:00.000Z",
+    "roi": {
+      "times": 71.43200709838108,
+      "currency": "btc",
+      "percentage": 7143.200709838107
+    },
+    "last_updated": "2023-11-06T20:29:27.197Z"
+  }
+]
+""".data(using: .utf8)!
