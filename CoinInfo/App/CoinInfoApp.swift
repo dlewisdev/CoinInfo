@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct NetworkingTutorialApp: App {
+struct CoinInfoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(service: CoinDataService())

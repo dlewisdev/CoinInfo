@@ -50,6 +50,7 @@ class CoinDataService: CoinServiceProtocol, HTTPDataDownloader {
         
         return components
     }
+    
     private var allCoinsURLString: String? {
         var components = baseURLComponents
         components.path += "markets"
@@ -60,7 +61,7 @@ class CoinDataService: CoinServiceProtocol, HTTPDataDownloader {
             .init(name: "page", value: "\(page)"),
             .init(name: "price_change_percentage", value: "24h")
         ]
-        
+    
         return components.url?.absoluteString
     }
     

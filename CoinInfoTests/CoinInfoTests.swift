@@ -8,7 +8,7 @@
 import XCTest
 @testable import NetworkingTutorial
 
-final class NetworkingTutorialTests: XCTestCase {
+final class CoinInfoTests: XCTestCase {
 
     func test_DecodeCoinsIntoArray_marketCapDesc() throws {
         do {
